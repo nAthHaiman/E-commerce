@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Mid Project</title>
+</head>
+
+<body>
+  <header>
+    <nav class="back navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="logo navbar-brand" href="#">Jersy Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="barbut nav-item">
+              <a class="item nav-link" href="#">Home</a>
+            </li>
+            <li class=" nav-item">
+              <a class="item nav-link" href="#product">Product</a>
+            </li>
+            <li class=" nav-item">
+              <a class="item nav-link" href="#upcoming">Upcoming</a>
+            </li>
+            <li class="nav-item">
+              <a class="item nav-link" href="#review">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="item nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br><br><br>
+  <section>
+<br>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+
+          <div class="slide d-flex w-75 ms-auto me-auto">
+            <div class="w-50 mt-auto mb-auto">
+              <h3>Flat Sale On Bangladesh T20 WC Jersy</h3>
+
+              <p1 class="Price">
+                Price : 150$
+              </p1>
+
+            </div>
+            <div class="ms-auto">
+              <img src="slide1.png" class="slideImg" alt="...">
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+
+          <div class="d-flex w-75 ms-auto me-auto">
+            <div class="w-50 mt-auto mb-auto">
+              <h3>PSG Kit New Arrival</h3>
+              <p class="Price">
+                Price : 600$
+              </p>
+
+            </div>
+            <div class="ms-auto">
+              <img src="slidepsg.png" class="slideImg" alt="...">
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="d-flex w-75 ms-auto me-auto">
+            <div class="w-50 mt-auto mb-auto">
+              <h3>Burberry Solid T-Shirt</h3>
+            
+              <p class="Price">
+                Price = 199$
+              </p>
+
+            </div>
+            <div class="ms-auto">
+              <img src="Barca.png" class="slideImg" alt="...">
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <h2 id="product"  class="head text-dark fw-bold">Available In Stock </h2>
+  <section class="d-flex container my-5" id="products">
+
+
+    <div class="parentdiv">
+      <div class="block rounded">
+        <div class="card border border-0 shadow-lg h-80">
+          <img src="practice.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="cardhead fw-bold">Practice Kit Bangladesh
+            </h5>
+            <h5 class="cardprice fw-bold">$300</h5>
+          </div>
+          <div class="Buttonhead">
+            <div onclick="addToCart(300)"  class="button btn ">Add To Cart</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="block">
+        <div class="card border border-0 shadow-lg h-80">
+          <img src="germany.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="cardhead fw-bold">Germany Premium Kit
+            </h5>
+            <h5 class="cardprice fw-bold">$1000</h5>
+          </div>
+          <div class="Buttonhead">
+            <div onclick="addToCart(1000)" class="button btn">Add To Cart</div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card border border-0 shadow-lg h-80">
+          <img src="juventus.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="cardhead fw-bold">Juventus Away Jersy
+            </h5>
+            <h5 class="cardprice fw-bold">Price : $500</h5>
+          </div>
+          <div class="Buttonhead">
+            <div onclick="addToCart(500)" class="button btn">Add To Cart </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card border border-0 shadow-lg h-80">
+          <img src="Liverpool.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="cardhead fw-bold">Liverpool Kepping Jersy
+            </h5>
+            <h5 class="cardprice fw-bold">Price : $700</h5>
+          </div>
+          <div class="Buttonhead">
+            <div onclick="addToCart(700)" class="button btn">Add To Cart </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card border border-0 shadow-lg h-80">
+          <img src="Argentna.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="cardhead fw-bold">Argentina Away kit
+            </h5>
+            <h5 class="cardprice fw-bold">Price : $1000</h5>
+          </div>
+          <div class="Buttonhead">
+            <div onclick="addToCart(1000)" class="button btn">Add To Cart </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card border border-0 shadow-lg h-80">
+          <img src="juventus.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="cardhead fw-bold">Juventus Away Jersy
+            </h5>
+            <h5 class="cardprice fw-bold">Price : $500</h5>
+          </div>
+          <div class="Buttonhead">
+            <div onclick="addToCart(500)" class="button btn">Add To Cart </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card border border-0 shadow-lg h-80">
+          <img src="Liverpool.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="cardhead fw-bold">Liverpool Kepping Jersy
+            </h5>
+            <h5 class="cardprice fw-bold">Price : $700</h5>
+          </div>
+          <div class="Buttonhead">
+            <div onclick="addToCart(700)" class="button btn">Add To Cart </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card border border-0 shadow-lg h-100">
+          <img src="Argentna.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="cardhead fw-bold">Argentina Away kit
+            </h5>
+            <h5 class="cardprice fw-bold">Price : $1000</h5>
+          </div>
+          <div class="Buttonhead">
+            <div onclick="addToCart(1000)" class="button btn">Add To Cart </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card border border-0 shadow-lg h-100">
+          <img src="Brasil.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="cardhead fw-bold">Brazil Away Kit
+            </h5>
+            <h5 class="cardprice fw-bold">Price : $1000</h5>
+          </div>
+          <div class="Buttonhead">
+            <div onclick="addToCart(1000)" class="button btn">Add To Cart </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cart ms-auto p-4 ">
+      <h3> <i class="fa-solid fa-cart-flatbed-suitcase"></i> Purchase Cart</h3>
+      <br>
+      <p>No Of Product: <span id="totalProduct">0</span></p> </span>
+      <p>Price Of Product: <span id="price">0 </span> $</p>
+      <p>Delivery Charge: <span id="delivery">0</span> $ </p>
+      <p>Service Charge: <span id="shipping">0</span>$ </p>
+      <p>Total: <span id="final">0</span>$</p>
+      <p>Vat: <span id="tax">0 </span> $</p>
+      <p>Total (With Vat) : <span id="incTax">0 </span>$</p>
+      <button onclick=" alert('Purchase Done. Thanks For Your Shopping') "
+        class="btn bg-primary fw-semibold text-dark">
+        Checkout
+      </button>
+    </div>
+  </section>
+  <br>
+  <h2 id="upcoming" class="head text-dark fw-bold">Upcoming Products </h2>
+  <section>
+    <div class="container my-5 parentofgrid ">
+        <div class="cardofgrid ">
+            <img class="uppic" src="England.png" alt="">
+            <h5>
+                England New Kit
+            </h5>           
+        </div>
+        <div class="cardofgrid">
+            <img class="uppic" src="newzeland.png" alt="">
+            <h5>
+              Newzeland New T20 Kit
+            </h5>
+        </div>
+        <div class="cardofgrid">
+            <img class="uppic" src="India.png" alt="">
+            <h5>
+              India New T20 Kit
+            </h5>
+        </div>
+       
+    </div>
+</section>
+<br>
+<h2 id="review" class="head text-dark fw-bold">Review Of Product </h2>
+<section class="container my-5" id="reviews">
+
+      <div class="col-md-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="row">
+                          <div class="col-4">
+                              <div class="single-box">
+                                  <div class="img-text">
+                                      <h2>Sabbir Rahman</h2>
+                                      <p>The service is good and the quality is mindblowing.Super comfort
+                                      </p>
+                                      <p><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i></p>
+                      
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="single-box">
+                                  <div class="img-text">
+                                      <h2>Peter Wesley</h2>
+                                      <p>The service is good and the quality is mindblowing.Super comfort
+                                      </p>
+                                      <p><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i></p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="single-box">
+                                  <div class="img-text">
+                                      <h2>George Bailey</h2>
+                                      <p>The service is good and the quality is mindblowing.Super comfort
+                                      </p>
+                                      <p><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <div class="single-box">
+                                  <div class="img-text">
+                                      <h2>Tim David</h2>
+                                      <p>The service is good and the quality is mindblowing.Super comfort
+                                      </p>
+                                      <p><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i></p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="single-box">
+                                  <div class="img-text">
+                                      <h2>David Boon</h2>
+                                      <p>The service is good and the quality is mindblowing.Super comfort
+                                      </p>
+                                      <p><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i></p>
+
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="single-box">
+                                  <div class="img-text">
+                                      <h2>Mike Hensley</h2>
+                                      <p>The service is good and the quality is mindblowing.Super comfort
+                                      </p>
+                                      <p><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <div class="single-box">
+                                  <div class="img-text">
+                                      <h2>Jonathan Trott</h2>
+                                      <p>The service is good and the quality is mindblowing.Super comfort
+                                      </p>
+                                      <p><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i></p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="single-box">
+                                  <div class="img-text">
+                                      <h2>Andrew Strauss</h2>
+                                      <p>The service is good and the quality is mindblowing.Super comfort </p>
+                                      <p><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i></p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="single-box">
+                                  <div class="img-text">
+                                      <h2>John Alistair</h2>
+                                      <p>The service is good and the quality is mindblowing.Super comfort
+                                      </p>
+                                      <p><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<h2 id="contact" class="head text-dark fw-bold">Contact & Info About Us </h2>
+<br>
+<section>
+  <div class="parentcontact">
+      <div class="allinfo">
+          <div class="contact">
+              <h1 class ="myhead text-dark fw-bold">Adress</h1>
+              <p>New Market, Chittagong</p>
+          </div>
+          <div class="contact">
+              <h1 class="myhead text-dark fw-bold">Phone</h1>
+              <p>01856015609</p>
+          </div>    
+          <div class="contact">
+              <h1 class="myhead text-dark fw-bold">Email</h1>
+              <p>haimannath20@gmail.com</p>
+          </div>
+          <div class="contact">
+              <h1 class="myhead text-dark fw-bold">Head</h1>
+              <p>Agrabad, Chittagong</p>
+          </div>
+          <div class="contact">
+            <h1 class="myhead text-dark fw-bold">Branch</h1>
+            <p>New Market,Gec Circle, Pahartoli</p>
+        </div>
+        <div class="contact">
+          <h1 class="myhead text-dark fw-bold">Free Pickup</h1>
+          <p>New Market,Gec Circle, Pahartoli</p>
+      </div>
+      </div>
+  </div>
+  
+</section>
+
+<section>
+  <div class="down text-center">
+    <div class="downheader down-header">
+      All Rights Deserved By
+    </div>
+    <br>
+    <div class="down-body">
+      <h5 class="down-title fw-bold">Dew Shaheb</h5>
+      <p>
+    Email : c201067@grad.iiuc.ac.bd
+    <br>
+               Contact : 01856015609
+      </p>
+      <a href="#" class="buttonfoot btn ">Back to Top</a>
+    </div>
+    <div class="down-footer">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/e91c72e050.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
